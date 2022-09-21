@@ -8,7 +8,7 @@ const textSearch = document.createElement('div');
 const inputSearch = document.createElement('input');
 const labelInputBrand = document.createElement('label');
 const textBrand = document.createElement('div');
-const InputBrand = document.createElement('input');
+const inputBrand = document.createElement('input');
 const btn = document.createElement('button');
 const text = document.createElement('h1');
 const ol = document.createElement('ol');
@@ -24,7 +24,7 @@ container.append(ol);
 container.append(empty);
 
 labelInputBrand.append(textBrand);
-labelInputBrand.append(InputBrand);
+labelInputBrand.append(inputBrand);
 labelInputSearch.append(textSearch);
 labelInputSearch.append(inputSearch);
 
@@ -135,7 +135,7 @@ const addEventClick = () => {
     if (event === btn) {
       const search = inputSearch.value.trim();
       if (!search) return;
-      const searchBrand = InputBrand.value.trim();
+      const searchBrand = inputBrand.value.trim();
       runSearching(search, searchBrand);
     }
   });
